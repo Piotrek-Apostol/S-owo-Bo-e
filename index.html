@@ -6,7 +6,7 @@
     <title>Słowo Boże</title>
    <style>
     body {
-        background-color: #0d0d0f; /* Spokojne, ciemne tło */
+        background-color: #0d0d0f; /* Czyste, głębokie czarne tło */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -20,11 +20,12 @@
         background: #1a1a1d; 
         padding: 40px 25px;
         border-radius: 12px;
-        border: 1px solid #d4af37; /* Złota obwoluta karty */
+        border: 1px solid #d4af37; /* Złota ramka */
         box-shadow: 0 10px 40px rgba(0,0,0,0.8);
         text-align: center;
-        max-width: 450px;
+        max-width: 420px; /* Blokada szerokości */
         width: 85%;
+        box-sizing: border-box; /* To pilnuje, żeby napisy nie wychodziły poza ramkę */
     }
 
     .crucifix-box {
@@ -32,18 +33,18 @@
     }
 
     .christ-header {
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        font-size: 1rem;
-        color: #d4af37;
-        margin-bottom: 25px;
-        font-weight: bold;
         display: block;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 0.9rem;
+        color: #d4af37;
+        margin-bottom: 20px;
+        font-weight: bold;
     }
 
     #v-text {
-        font-size: 1.5rem;
-        line-height: 1.6;
+        font-size: 1.4rem;
+        line-height: 1.5;
         margin: 20px 0;
         color: #ffffff;
         font-style: italic;
@@ -53,7 +54,7 @@
         display: block;
         font-weight: bold;
         color: #d4af37;
-        margin-top: 15px;
+        margin-bottom: 20px;
         font-size: 1.1rem;
     }
 
@@ -66,23 +67,22 @@
         border-radius: 5px;
         cursor: pointer;
         font-weight: bold;
-        margin-top: 25px;
+        width: 100%; /* Przycisk trzyma szerokość karty */
     }
 
     .trust-msg {
         margin-top: 25px;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         color: #d4af37;
         font-weight: bold;
-        letter-spacing: 1px;
+    }
+
     .tomorrow-info {
-        margin-top: 15px;
-        font-size: 1.1rem;      /* Większa czcionka */
-        color: #ffffff;         /* Biały kolor, żeby był bardzo wyraźny */
-        font-weight: bold;      /* Pogrubienie */
-        text-shadow: 0 0 10px rgba(212, 175, 55, 0.8); /* Złota poświata wokół napisu */
-        border-top: 1px solid rgba(212, 175, 55, 0.3); /* Delikatna linia oddzielająca */
-        padding-top: 15px;
+        margin-top: 10px;
+        font-size: 0.9rem;
+        color: #ffffff;
+        font-weight: normal;
+        opacity: 0.8;
     }
 </style>
 
