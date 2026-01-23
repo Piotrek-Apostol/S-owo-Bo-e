@@ -6,90 +6,75 @@
     <title>Słowo Boże</title>
    <style>
     body {
-        background-color: #050508; /* Głęboka, czysta czerń */
+        background-color: #0d0d0f; /* Spokojne, ciemne tło */
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
         margin: 0;
-        font-family: 'Arial', sans-serif;
-        /* Złota rama wokół całego ekranu */
-        border: 10px solid #111;
-        outline: 2px solid #d4af37;
-        outline-offset: -8px;
-        box-sizing: border-box;
+        font-family: sans-serif;
+        color: #ffffff;
     }
 
     .card {
-        background: #111118;
-        padding: 50px 30px;
-        border-radius: 5px;
-        border: 1px solid #d4af37;
-        box-shadow: 0 0 60px rgba(212, 175, 55, 0.15);
+        background: #1a1a1d; 
+        padding: 40px 25px;
+        border-radius: 12px;
+        border: 1px solid #d4af37; /* Złota obwoluta karty */
+        box-shadow: 0 10px 40px rgba(0,0,0,0.8);
         text-align: center;
-        max-width: 500px;
+        max-width: 450px;
         width: 85%;
-        position: relative;
     }
 
-    /* Krucyfiks z poświatą */
-    .sacred-icon {
+    .crucifix-box {
         margin-bottom: 20px;
-        filter: drop-shadow(0 0 12px rgba(212, 175, 55, 0.6));
     }
 
-    .christ-title {
+    .christ-header {
         text-transform: uppercase;
-        letter-spacing: 6px;
-        font-size: 1.1rem;
+        letter-spacing: 3px;
+        font-size: 1rem;
         color: #d4af37;
-        margin-bottom: 40px;
+        margin-bottom: 25px;
         font-weight: bold;
         display: block;
     }
 
     #v-text {
-        font-size: 1.7rem;
-        line-height: 1.5;
-        margin: 30px 0;
+        font-size: 1.5rem;
+        line-height: 1.6;
+        margin: 20px 0;
         color: #ffffff;
         font-style: italic;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
     }
 
     #v-ref {
         display: block;
         font-weight: bold;
         color: #d4af37;
-        margin-top: 25px;
-        font-size: 1.2rem;
+        margin-top: 15px;
+        font-size: 1.1rem;
     }
 
     button {
         background: #d4af37;
         color: #000;
         border: none;
-        padding: 18px 45px;
+        padding: 15px 30px;
         font-size: 1.1rem;
-        border-radius: 0; /* Kwadratowy, klasyczny przycisk */
+        border-radius: 5px;
         cursor: pointer;
         font-weight: bold;
-        transition: 0.4s;
-        text-transform: uppercase;
-        margin-top: 30px;
-    }
-
-    button:hover {
-        background: #fff;
-        box-shadow: 0 0 25px #d4af37;
+        margin-top: 25px;
     }
 
     .trust-msg {
-        margin-top: 35px;
-        font-size: 1rem;
+        margin-top: 25px;
+        font-size: 1.1rem;
         color: #d4af37;
         font-weight: bold;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
     }
 </style>
 
