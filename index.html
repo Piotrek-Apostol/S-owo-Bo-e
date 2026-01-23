@@ -6,7 +6,7 @@
     <title>Słowo Boże</title>
    <style>
     body {
-        background-color: #0d0d0f; /* Czyste, głębokie czarne tło */
+        background-color: #0d0d0f; /* Spokojne, ciemne tło */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -20,12 +20,11 @@
         background: #1a1a1d; 
         padding: 40px 25px;
         border-radius: 12px;
-        border: 1px solid #d4af37; /* Złota ramka */
+        border: 1px solid #d4af37; /* Złota obwoluta karty */
         box-shadow: 0 10px 40px rgba(0,0,0,0.8);
         text-align: center;
-        max-width: 420px; /* Blokada szerokości */
+        max-width: 450px;
         width: 85%;
-        box-sizing: border-box; /* To pilnuje, żeby napisy nie wychodziły poza ramkę */
     }
 
     .crucifix-box {
@@ -33,18 +32,18 @@
     }
 
     .christ-header {
-        display: block;
         text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size: 0.9rem;
+        letter-spacing: 3px;
+        font-size: 1rem;
         color: #d4af37;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
         font-weight: bold;
+        display: block;
     }
 
     #v-text {
-        font-size: 1.4rem;
-        line-height: 1.5;
+        font-size: 1.5rem;
+        line-height: 1.6;
         margin: 20px 0;
         color: #ffffff;
         font-style: italic;
@@ -54,7 +53,7 @@
         display: block;
         font-weight: bold;
         color: #d4af37;
-        margin-bottom: 20px;
+        margin-top: 15px;
         font-size: 1.1rem;
     }
 
@@ -67,28 +66,29 @@
         border-radius: 5px;
         cursor: pointer;
         font-weight: bold;
-        width: 100%; /* Przycisk trzyma szerokość karty */
+        margin-top: 25px;
     }
 
     .trust-msg {
         margin-top: 25px;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         color: #d4af37;
         font-weight: bold;
-    }
-
+        letter-spacing: 1px;
     .tomorrow-info {
-        margin-top: 10px;
-        font-size: 0.9rem;
-        color: #ffffff;
-        font-weight: normal;
-        opacity: 0.8;
+        margin-top: 15px;
+        font-size: 1.1rem;      /* Większa czcionka */
+        color: #ffffff;         /* Biały kolor, żeby był bardzo wyraźny */
+        font-weight: bold;      /* Pogrubienie */
+        text-shadow: 0 0 10px rgba(212, 175, 55, 0.8); /* Złota poświata wokół napisu */
+        border-top: 1px solid rgba(212, 175, 55, 0.3); /* Delikatna linia oddzielająca */
+        padding-top: 15px;
     }
 </style>
 
 <div class="card">
     <div class="crucifix-box">
-        <svg width="50" height="85" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="60" height="100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="11.2" y="2" width="1.6" height="20" fill="#d4af37"/> 
             <rect x="6" y="7" width="12" height="1.2" fill="#d4af37"/> 
             <circle cx="12" cy="6.5" r="1.3" fill="#ffffff"/> 
@@ -103,22 +103,10 @@
     
     <button id="btn" onclick="losuj()">Odbierz Słowo</button>
     
-    <div id="info" style="display:none;">
-        <div class="trust-msg">JEZU UFAM TOBIE</div>
-        <div class="tomorrow-info">Zapraszam jutro po kolejne Słowo Boże</div>
-    </div>
+   <div id="info" style="display:none;" class="trust-msg">
+    JEZU UFAM TOBIE<br>
+    <span style="font-size: 0.8rem; font-weight: normal; color: #888;">Zapraszam jutro po kolejne Słowo Boże.</span>
 </div>
-    <span class="christ-header">Jezus Chrystus Królem</span>
-    
-    <div id="v-text">Przyjmij Słowo Boże...</div>
-    <div id="v-ref"></div>
-    
-    <button id="btn" onclick="losuj()">Odbierz Słowo</button>
-    
-    <div id="info" style="display:none;" class="trust-msg">
-        JEZU UFAM TOBIE
-        <div class="tomorrow-info">Zapraszam jutro po kolejne Słowo Boże</div>
-    </div>
 </div>
 
 <script>
