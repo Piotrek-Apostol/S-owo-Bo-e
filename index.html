@@ -77,12 +77,33 @@
         letter-spacing: 1px;
     .tomorrow-info {
     margin-top: 20px;
-    font-size: 1.2rem;       /* Powiększyłem czcionkę */
-    color: #ffffff !important; /* Wymuszamy czystą biel */
-    font-weight: 800;        /* Bardzo gruby tekst */
-    text-shadow: 2px 2px 4px #000000, 0 0 15px rgba(212, 175, 55, 0.7); /* Czarny cień + złota poświata */
+    /* Ustawiamy tę samą czcionkę co w reszcie strony */
+    font-family: sans-serif; 
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #ffffff;
     display: block;
-    opacity: 1 !important;   /* Pełna moc koloru */
+    text-transform: none;
+    
+    /* Efekt świecenia (poświata złoto-biała) */
+    text-shadow: 
+        0 0 5px #fff, 
+        0 0 10px #fff, 
+        0 0 20px #d4af37, 
+        0 0 30px #d4af37;
+        
+    /* Opcjonalnie: lekkie pulsowanie, żeby "żyło" */
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Dodatkowy efekt pulsowania blasku */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #d4af37;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #d4af37, 0 0 30px #d4af37;
+    }
 }
 </style>
 
